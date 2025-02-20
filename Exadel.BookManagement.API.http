@@ -1,0 +1,6 @@
+@Exadel.BookManagement.API_HostAddress = http://localhost:5273
+
+GET {{Exadel.BookManagement.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
