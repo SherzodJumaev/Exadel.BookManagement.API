@@ -1,4 +1,7 @@
 
+using Exadel.BookManagement.API.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace Exadel.BookManagement.API
 {
     public class Program
@@ -13,6 +16,11 @@ namespace Exadel.BookManagement.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContextPool<ApplicationDBContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             var app = builder.Build();
 
