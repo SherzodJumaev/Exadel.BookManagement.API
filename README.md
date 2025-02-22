@@ -16,7 +16,8 @@ Exadel Book Management API is a .NET 8.0 Web API that provides functionality for
 - .NET 8.0 SDK
 - SQL Server
 
-# Steps
+<details>
+  <summary>Steps</summary>
 1. Clone the repository:
 ```md
 git clone https://github.com/SherzodJumaev/Exadel.BookManagement.API.git
