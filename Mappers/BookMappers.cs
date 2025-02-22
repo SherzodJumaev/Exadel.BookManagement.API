@@ -14,5 +14,35 @@ namespace Exadel.BookManagement.API.Mappers
                 PublicationYear = bookDto.PublicationYear
             };
         }
+
+        public static BookDtoForTitle ToOnlyTitleFromBook(this Book book)
+        {
+            return new BookDtoForTitle
+            {
+                Title = book.Title
+            };
+        }
+
+        public static BookMainDto ToBookMainDtoFromBook(this Book bookModel)
+        {
+            return new BookMainDto
+            {
+                Title = bookModel.Title,
+                AuthorName = bookModel.AuthorName,
+                BookViews = bookModel.BookViews,
+                PublicationYear = bookModel.PublicationYear,
+                PopularityScore = bookModel.BookViews * 0.5 + ((DateTime.Now.Year - bookModel.PublicationYear) * 2)
+            };
+        }
+
+        public static BookDto ToBookDtoFromBook(this Book bookModel)
+        {
+            return new BookDto
+            {
+                Title = bookModel.Title,
+                AuthorName = bookModel.AuthorName,
+                PublicationYear = bookModel.PublicationYear
+            };
+        }
     }
 }
