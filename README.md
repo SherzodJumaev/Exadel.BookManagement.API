@@ -17,27 +17,28 @@ Exadel Book Management API is a .NET 8.0 Web API that provides functionality for
 - SQL Server
 
 <details>
-  <summary>**Steps**</summary>
+  <summary>Steps</summary>
 1. Clone the repository:
 ```md
-git clone https://github.com/SherzodJumaev/Exadel.BookManagement.API.git
-cd exadel-book-management-api
-```
-2. Set up the database connection in appsettings.json:
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "your-sql-server-connection-string"
-}
-```
-3. Apply database migrations:
-```md
-dotnet ef database update
-```
-4. Run the application:
-```md
-dotnet run
-```
+  git clone https://github.com/SherzodJumaev/Exadel.BookManagement.API.git
+  cd exadel-book-management-api
+  ```
+  2. Set up the database connection in appsettings.json:
+  ```json
+  "ConnectionStrings": {
+    "DefaultConnection": "your-sql-server-connection-string"
+  }
+  ```
+  3. Apply database migrations:
+  ```md
+  dotnet ef database update
+  ```
+  4. Run the application:
+  ```md
+  dotnet run
+  ```
 </details>
+
 # API Endpoints
 **Authentication**
 - POST /api/auth/register - Register a new user
