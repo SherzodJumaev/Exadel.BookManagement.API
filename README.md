@@ -46,6 +46,7 @@ dotnet run
 **Authentication**
 - POST /api/auth/register - Register a new user
 - POST /api/auth/login - Authenticate a user and generate a JWT
+
 **Books**
 - GET /api/books - Retrieve all books (only titles)
 - POST /api/Books - Create a new book
