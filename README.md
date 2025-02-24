@@ -53,7 +53,7 @@ dotnet run
 - GET /api/Books/{title} - Retrieve a book by title
 - PUT /api/Books/{title} - Update an existing book by title
 - DELETE /api/Books/{title} - Delete a book by title
-- GET /api/Books/soft-deleted-books-titles - Retrieve soft-deleted book titles
 - POST /api/Books/bulk - Bulk create books
 - DELETE /api/Books/bulk - Bulk delete books
+- GET /api/Books/soft-deleted-books-titles - Retrieve soft-deleted book titles
 - PUT /api/Books/restore/{title} - Restore a soft-deleted book
